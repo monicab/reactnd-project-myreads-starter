@@ -16,12 +16,12 @@ class BookCover extends Component {
     };
     const backgroundImage = this.getBackgroundImage(imageLinks);
 
-    if (backgroundImage !== null) { style.backgroundImage = backgroundImage }
+    if (backgroundImage) { style.backgroundImage = backgroundImage }
     return style;
   }
 
   getBackgroundImage = (imageLinks) => {
-    if (imageLinks && imageLinks.smallThumbnail !== null) {
+    if (imageLinks && imageLinks.smallThumbnail) {
       return `url("${imageLinks.smallThumbnail}")`
     }
   }

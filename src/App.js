@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Route, Link } from 'react-router-dom'
 import * as BooksAPI from './BooksAPI'
 import Bookshelve from './Bookshelve'
 import SearchBooks from './search/SearchBooks'
 import './App.css'
 
-class BooksApp extends React.Component {
+class App extends Component {
   state = {
     books: []
   };
@@ -88,7 +88,7 @@ class BooksApp extends React.Component {
   }
 }
 
-export default BooksApp
+export default App
 
 // <div className="search-books">
 //   <div className="search-books-bar">
