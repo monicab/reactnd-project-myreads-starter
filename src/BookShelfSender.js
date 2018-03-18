@@ -37,7 +37,7 @@ class BookShelfSender extends Component {
     // TODO: Confirm this is the best way to initialize state!!!
     // This is an anti pattern so not sure how to do this, otherwise
     this.setState({
-      value: this.props.currentShelf
+      value: this.props.currentShelf || "none"
     })
   }
 
